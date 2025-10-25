@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "flatyeet:item/metal_plate_0"
+  }
+}

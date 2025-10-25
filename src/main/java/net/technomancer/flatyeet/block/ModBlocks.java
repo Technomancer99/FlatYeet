@@ -17,6 +17,7 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, FlatYeet.MOD_ID);
 
+    //Adding Blocks
     public static final RegistryObject<Block> METAL_BLOCK = registerBlock("metal_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 

@@ -10,6 +10,7 @@ import net.technomancer.flatyeet.FlatYeet;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, FlatYeet.MOD_ID);
+
     //Adding Items
     public static final RegistryObject<Item> HOGANETRINE = ITEMS.register("hoganetrine",
             () -> new Item(new Item.Properties()));
