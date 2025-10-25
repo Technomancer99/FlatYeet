@@ -13,6 +13,8 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.technomancer.flatyeet.block.ModBlocks;
+import net.technomancer.flatyeet.item.ModCreativeModeTabs;
 import net.technomancer.flatyeet.item.ModItems;
 import org.slf4j.Logger;
 
@@ -29,8 +31,12 @@ public class FlatYeet
     {
         IEventBus modEventBus = context.getModEventBus();
 
+        //Own code
         ModItems.register(modEventBus);//Add our mod's items to game
+        ModBlocks.register(modEventBus);//Add our mod's blocks to game
+        ModCreativeModeTabs.register(modEventBus);//Register new creative mode tab
 
+        //Provided code
         modEventBus.addListener(this::commonSetup);// Register the commonSetup method for modloading
         MinecraftForge.EVENT_BUS.register(this);// Register ourselves for server and other game events we are interested in
         modEventBus.addListener(this::addCreative);// Register the item to a creative tab
@@ -45,9 +51,7 @@ public class FlatYeet
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.METAL_INGOT);
-        }
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

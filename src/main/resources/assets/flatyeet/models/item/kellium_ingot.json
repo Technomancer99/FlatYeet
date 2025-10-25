@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "flatyeet:item/metal_ingot"
+    "layer0": "flatyeet:item/kellium_ingot"
   }
 }

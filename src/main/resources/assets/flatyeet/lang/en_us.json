@@ -1,3 +1,11 @@
 {
-  "item.flatyeet.metal_ingot": "M.E.T.A.L. Ingot"
+  "creativetab.flat_yeet_tab": "Flat Yeet",
+  "item.flatyeet.hoganetrine": "Hoganetrine",
+  "item.flatyeet.hoganetrine_dust": "Hoganetrine Dust",
+  "item.flatyeet.raw_kellium": "Raw Kellium",
+  "item.flatyeet.kellium_ingot": "Kellium Ingot",
+  "item.flatyeet.kellium_dust": "Kellium Dust",
+  "item.flatyeet.metal_ingot": "M.E.T.A.L. Ingot",
+  "item.flatyeet.metal_dust": "M.E.T.A.L. Blend",
+  "item.flatyeet.hell_blade": "Hell Blade"
 }
