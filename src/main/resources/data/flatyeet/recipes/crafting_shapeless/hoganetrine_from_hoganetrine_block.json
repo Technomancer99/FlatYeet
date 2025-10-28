@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "flatyeet:hoganetrine_block"
+    }
+  ],
+  "result": {
+    "item": "flatyeet:hoganetrine",
+    "count": 9
+  }
+}

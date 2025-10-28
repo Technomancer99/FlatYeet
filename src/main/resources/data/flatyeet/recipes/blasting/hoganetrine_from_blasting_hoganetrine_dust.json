@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "group": "hoganetrine",
+  "ingredient": {
+    "item": "flatyeet:hoganetrine_dust"
+  },
+  "result": "flatyeet:hoganetrine"
+}

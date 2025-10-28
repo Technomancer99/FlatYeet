@@ -1,8 +1,10 @@
 package net.technomancer.flatyeet.block;
 
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraft.world.level.block.Block;
@@ -18,6 +20,15 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, FlatYeet.MOD_ID);
 
     //Adding Blocks
+    public static final RegistryObject<Block> HOGANETRINE_ORE = registerBlock("hoganetrine_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(3, 7)));
+    public static final RegistryObject<Block> HOGANETRINE_BLOCK = registerBlock("hoganetrine_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)));
+    public static final RegistryObject<Block> KELLIUM_BLOCK = registerBlock("kellium_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)));
+    public static final RegistryObject<Block> STORMIUM_BLOCK = registerBlock("stormium_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)));
     public static final RegistryObject<Block> METAL_BLOCK = registerBlock("metal_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 

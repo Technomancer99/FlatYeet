@@ -6,6 +6,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.technomancer.flatyeet.FlatYeet;
+import net.technomancer.flatyeet.item.custom.MetalDetectorItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -24,12 +25,20 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> METAL_INGOT = ITEMS.register("metal_ingot",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAW_STORMIUM = ITEMS.register("raw_stormium",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> STORMIUM_INGOT = ITEMS.register("stormium_ingot",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> STORMIUM_DUST = ITEMS.register("stormium_dust",
+            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> METAL_DUST = ITEMS.register("metal_dust",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> METAL_PLATE = ITEMS.register("metal_plate",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> HELL_BLADE = ITEMS.register("hell_blade",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
+            () -> new MetalDetectorItem(new Item.Properties().durability(100)));
 
 
     public static void register(IEventBus eventBus) {

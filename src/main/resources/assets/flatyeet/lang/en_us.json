@@ -1,12 +1,14 @@
 {
-  "block.flatyeet.metal_block": "Block of M.E.T.A.L.",
+  "block.flatyeet.hoganetrine_ore": "Hoganetrine Ore",
+  "block.flatyeet.hoganetrine_block": "Block of Hoganetrine",
+  "block.flatyeet.metal_block": "Block of METAL",
   "creativetab.flat_yeet_tab": "Flat Yeet",
   "item.flatyeet.hoganetrine": "Hoganetrine",
   "item.flatyeet.hoganetrine_dust": "Hoganetrine Dust",
   "item.flatyeet.raw_kellium": "Raw Kellium",
   "item.flatyeet.kellium_ingot": "Kellium Ingot",
   "item.flatyeet.kellium_dust": "Kellium Dust",
-  "item.flatyeet.metal_ingot": "M.E.T.A.L. Ingot",
-  "item.flatyeet.metal_dust": "M.E.T.A.L. Blend",
+  "item.flatyeet.metal_ingot": "METAL Ingot",
+  "item.flatyeet.metal_dust": "METAL Blend",
   "item.flatyeet.hell_blade": "Hell Blade"
 }
